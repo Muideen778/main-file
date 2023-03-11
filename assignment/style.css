@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(9, 198, 245);
+    height: fit-content;
+    display: flex;
+}
+
+.header1 {
+    border: 2px solid slategrey;
+    background-image: url("Logo3.jpg");
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header2{
+    border: 2px solid slategrey;
+    background-color: rgb(9, 198, 245);
+    height: 100px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img{
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 30px;
+}
+
+.nav{
+    flex-grow: 1;
+    text-align: right;
+    padding: 20px;
+}
+
+.nav ul li{
+    display: inline;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(6, 102, 73);
+    padding: 10px;
+    font-weight: 500;
+    
+}
+
+.div, .div1, .div2{
+    margin: 3px;
+    text-align: center;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33%;
+    
+}
+.div > img, .div1 > img, .div2 > img{
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer1{
+    border: 2px solid slategrey;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(9, 198, 245);
+    padding-top: 20px;
+}
+
+footer{
+    text-align: center;
+}
+.center{
+    display: flex;
+    width: 100%;
+}
+@media screen and (max-width:600px) {
+    .header, .center {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+    .container{
+        padding: 0;
+    }
+   .div1, .div2,.div{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .footer1{
+        padding: 0;
+        border: none;
+    }
+}
